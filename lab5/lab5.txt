@@ -1,0 +1,130 @@
+\documentclass[12pt, russian]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{colortbl}
+
+\usetheme{Copenhagen}
+\usecolortheme{seahorse}
+\usefonttheme{professionalfonts}
+
+\title{История физмата ОГУ им. И. С. Тургенева}
+\author{Шураев Дмитрий}
+\date{\today}
+\institute{ОГУ им. И. С. Тургенева}
+
+\begin{document}
+
+% ==================== ТИТУЛ ====================
+\begin{frame}
+\titlepage
+\end{frame}
+
+% ==================== СЛАЙД 1: ОСНОВАНИЕ ====================
+\begin{frame}{1931 – Основание}
+\begin{block}{}
+    5 августа — открыт Орловский индустриально-педагогический институт
+\end{block}
+\begin{exampleblock}{}
+    Создан физико-технический факультет
+\end{exampleblock}
+\begin{alertblock}{Цифры}
+    121 студент (весь институт) \\
+    34 студента (на физтехе) \\
+    11 преподавателей (всего)
+\end{alertblock}
+\begin{block}{1932}
+    Переименован в физико-математический
+\end{block}
+\end{frame}
+
+% ==================== СЛАЙД 2: ДО ВОЙНЫ ====================
+\begin{frame}{1934–1940}
+\begin{itemize}
+    \item 1934 — специальности «Математика» и «Физика»
+    \item 1935 — первый выпуск
+    \item 1940 — в числе ведущих факультетов
+\end{itemize}
+\begin{block}{1940: институт}
+    13 кафедр, 11 специальностей
+\end{block}
+\end{frame}
+
+% ==================== СЛАЙД 3: ВОЙНА ====================
+\begin{frame}{1941–1945}
+\begin{block}{}
+    Студенты и преподаватели ушли на фронт
+\end{block}
+\begin{exampleblock}{Герой}
+    В. А. Булычев (студент) — Герой Советского Союза
+\end{exampleblock}
+\begin{alertblock}{Эвакуация}
+    Бирск → Елец
+\end{alertblock}
+\end{frame}
+
+% ==================== СЛАЙД 4: ПОСЛЕ ВОЙНЫ ====================
+\begin{frame}{1950–1996}
+\begin{itemize}
+    \item 1950 — вечернее отделение
+    \item 1957 — новое здание (Комсомольская, 95)
+    \item 1996 — статус классического университета
+\end{itemize}
+\end{frame}
+
+% ==================== СЛАЙД 5: ДЕКАНЫ ====================
+\begin{frame}{Руководители}
+\begin{table}
+\centering
+\small
+\begin{tabular}{ll}
+\toprule
+Период & Декан \\
+\midrule
+1940-е & П. Д. Ерёмин \\
+1950–1960-е & Т. И. Поподько \\
+2010-е — н.в. & \textbf{Т. Н. Можарова} \\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{frame}
+
+% ==================== СЛАЙД 6: СЕГОДНЯ ====================
+\begin{frame}{Сегодня}
+\begin{columns}[T]
+\begin{column}{0.55\textwidth}
+    \begin{block}{Направления}
+        Математика \\
+        Физика \\
+        Информатика \\
+        Педагогическое образование
+    \end{block}
+    \begin{alertblock}{}
+        93+ лет истории \\
+        Старейший факультет
+    \end{alertblock}
+\end{column}
+\begin{column}{0.45\textwidth}
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{fizmat.jpg}
+        \caption{Физмат ОГУ}
+    \end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ==================== ФИНАЛ ====================
+\begin{frame}
+\begin{center}
+    \Huge{Спасибо}
+    
+    \vspace{0.8cm}
+    \Large{93 года традиций}
+\end{center}
+\end{frame}
+
+\end{document}
