@@ -1,0 +1,150 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=1.5cm}
+
+\begin{document}
+
+\chapter*{Глава II. Уравнения гиперболического типа}
+\addcontentsline{toc}{chapter}{Глава II. Уравнения гиперболического типа}
+
+\subsection*{Переход к пределу и представление решения}
+
+Переходя к пределу при \(\varepsilon \to 0\) видим, что существует предел
+
+\[
+\lim_{\varepsilon \to 0} u_\varepsilon(t) = \lim_{\varepsilon \to 0} U(t - \tau_\varepsilon^*) = U(t),
+\]
+
+что доказывает наше утверждение.
+
+Перейдем к представлению решения \textit{неоднородного уравнения} через \(U(t)\) — \textit{функцию влияния мгновенного импульса}. Разбивая промежуток \((0, t)\) точками \(\tau_i\) на равные части \(\Delta\tau = \frac{t}{m}\), представим функцию \(f(t)\) в виде
+
+\[
+f(t) = \sum_{i=1}^{m} f_i(t),
+\]
+
+где
+
+\[
+f_i(t) = 
+\begin{cases} 
+0 & \text{при } t < \tau_i \text{ и } t \ge \tau_{i+1}, \\
+f(t) & \text{при } \tau_i \le t < \tau_{i+1}.
+\end{cases}
+\]
+
+Тогда функция
+
+\[
+u(t) = \sum_{i=1}^{m} u_i(t),
+\]
+
+где \(u_i(t)\) суть решения уравнения \(L(u_i) = f_i\) с \textit{нулевыми начальными данными}.
+
+Если \(m\) достаточно велико, то функцию \(u_i(t)\) можно рассматривать как \textit{функцию влияния мгновенного импульса} интенсивности \(I = f_i(\tau_i) \Delta\tau = f(\tau_i) \Delta\tau\), так что
+
+\[
+\sum_{i=1}^{m} U(t - \tau_i) f(\tau_i) \Delta\tau \xrightarrow[\Delta\tau \to 0]{} \int_0^t U(t - \tau) f(\tau) \, d\tau,
+\]
+
+т.е. мы приходим к формуле
+
+\[
+u(t) = \int_0^t U(t - \tau) f(\tau) \, d\tau,
+\]
+
+показывающей, что влияние \textit{непрерывно действующей силы} можно представлять \textit{суперпозицией влияний мгновенных импульсов}.
+
+В рассмотренном выше случае \(u^{(1)}\) удовлетворяет уравнению (50) и условиям \(\dot{u}_n(0) = \dot{u}_n(0) = 0\). Для \textit{функции влияния} \(U(t)\) имеем:
+
+\[
+\ddot{U} + \left( \frac{\pi n}{1} \right)^2 a^2 U = 0, \quad U(0) = 0, \quad \dot{U}(0) = 1,
+\]
+
+так что
+
+\[
+U(t) = \frac{1}{\pi n a} \sin\left( \frac{\pi n}{a} t \right).
+\]
+
+Отсюда и из (3*) получаем \textit{формулу (52)}
+
+\[
+u^{(1)}(t) = \int_0^t U(t - \tau) f_n(\tau) \, d\tau = \frac{1}{\pi n a} \int_0^t \sin\left( \frac{\pi n}{a} (t - \tau) \right) f_n(\tau) \, d\tau.
+\]
+
+\subsection*{5. Общая первая краевая задача}
+
+Рассмотрим \textbf{общую первую краевую задачу} для уравнения колебаний: найти решение уравнения
+
+\begin{equation}
+u_{tt} = a^2 u_{xx} + f(x, t), \quad 0 < x < l, \quad t > 0 \tag{45}
+\end{equation}
+
+с дополнительными условиями
+
+\begin{equation}
+\left.
+\begin{aligned}
+u(x, 0) &= \varphi(x), \\
+u_t(x, 0) &= \psi(x),
+\end{aligned}
+\right\}
+\qquad
+0 \le x \le l; \tag{46}
+\end{equation}
+
+\begin{equation}
+\left.
+\begin{aligned}
+u(0, t) &= \mu_1(t), \\
+u(l, t) &= \mu_2(t),
+\end{aligned}
+\right\}
+\qquad
+t \ge 0. \tag{47}
+\end{equation}
+
+Введем новую неизвестную функцию \(v(x, t)\), полагая:
+
+\[
+u(x, t) = U(x, t) + v(x, t),
+\]
+
+так что \(v(x, t)\) представляет \textit{отклонение} функции \(u(x, t)\) от некоторой известной функции \(U(x, t)\).
+
+Эта функция \(v(x, t)\) будет определяться как решение уравнения
+
+\[
+v_{tt} = a^2 v_{xx} + \bar{f}(x, t), \quad \bar{f}(x, t) = f(x, t) - [U_{tt} - a^2 U_{xx}]
+\]
+
+с дополнительными условиями
+
+\[
+\begin{aligned}
+v(x, 0) &= \bar{\varphi}(x), \quad \bar{\varphi}(x) = \varphi(x) - U(x, 0), \\
+v_t(x, 0) &= \bar{\psi}(x); \quad \bar{\psi}(x) = \psi(x) - U_t(x, 0); \\
+v(0, t) &= \bar{\mu}_1(t), \quad \bar{\mu}_1(t) = \mu_1(t) - U(0, t), \\
+v(l, t) &= \bar{\mu}_2(t); \quad \bar{\mu}_2(t) = \mu_2(t) - U(l, t).
+\end{aligned}
+\]
+
+Выберем \textit{вспомогательную функцию} \(U(x, t)\) таким образом, чтобы
+
+\[
+\bar{\mu}_1(t) = 0 \quad \text{и} \quad \bar{\mu}_2(t) = 0;
+\]
+
+для этого достаточно положить
+
+\[
+U(x, t) = \mu_1(t) + \frac{x}{l} [\mu_2(t) - \mu_1(t)].
+\]
+
+Тем самым общая краевая задача для функции \(u(x, t)\) сведена к краевой задаче для функции \(v(x, t)\) при \textit{нулевых граничных условиях}. Метод решения этой задачи изложен выше (см. п. 4).
+
+\end{document}
