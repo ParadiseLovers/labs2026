@@ -4,5 +4,5 @@
 предметной области на примере trello
 
 Файлы
-- [Lab1.pdf](report.pdf)
-- [taskLab1.pdf](task.pdf)
+- [Lab1.pdf](Lab1.pdf)
+- [taskLab1.pdf](taskLab1.pdf)
