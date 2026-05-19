@@ -5,5 +5,6 @@
 2.	Повторить страницы (колонтитул можно опустить);
 
 Файлы
+- [Lab3(code).txt].(Lab3(code).txt)
 - [Lab3.pdf](Lab3.pdf)
 - [taskLab3.pdf](taskLab3.pdf)
