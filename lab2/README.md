@@ -4,5 +4,5 @@
 примере составления интеллект-карт – mind maps.
 
 Файлы
-- [Lab2.pdf](Lab2.pdf)
-- [taskLab2.pdf](taskLab2.pdf) (если есть)
+- [Lab2.png](Lab2.png)
+- [taskLab2.pdf](taskLab2.pdf)
